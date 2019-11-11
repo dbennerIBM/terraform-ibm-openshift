@@ -21,7 +21,7 @@ openshift_master_default_subdomain=${subdomain}
 
 # Use an htpasswd file as the indentity provider.
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
-openshift_disable_check= docker_image_availability,docker_storage,memory_availability,package_availability,package_version
+openshift_disable_check=disk_availability,docker_image_availability,docker_storage,memory_availability,package_availability,package_version
 # Uncomment the line below to enable metrics for the cluster.
 # openshift_hosted_metrics_deploy=true
 
