@@ -4,11 +4,11 @@ variable "hourly_billing" {
 }
 
 variable "datacenter" {
-  default = "lon06"
+  default = "dal09"
 }
 
 variable "hostname_prefix"{
-  default = "IBM-OCP"
+  default = "ocp"
 }
 
 variable "bastion_count" {
@@ -41,7 +41,7 @@ variable "ssh-label" {
 }
 
 variable "vm_domain" {
-  default = "IBM-OpenShift.cloud"
+  default = "ose.local"
 }
 
 
