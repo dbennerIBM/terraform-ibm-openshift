@@ -4,7 +4,7 @@ subscription-manager repos --enable="rhel-7-server-rpms"  --enable="rhel-7-serve
 rm -fr /var/cache/yum/*
 yum clean all
 yum -y update
-yum install -y wget vim-enhanced net-tools bind-utils tmux git iptables-services bridge-utils docker etcd rpcbind
+yum install -y wget vim-enhanced net-tools bind-utils tmux git iptables-services bridge-utils docker etcd rpcbind skopeo
 systemctl enable NetworkManager
 systemctl start NetworkManager
 systemctl start dnsmasq
